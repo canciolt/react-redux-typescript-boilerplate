@@ -1,4 +1,8 @@
+<p align="left">
+<img src="https://travis-ci.com/canciolt/react-redux-typescript-boilerplate.svg?branch=master" width="50">
+</p>
 # React-Redux-Typescript-Boilerplate
+
 <p align="center">
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" width="50">
 <img src="https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg" width="50">
