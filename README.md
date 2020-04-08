@@ -1,5 +1,5 @@
 <p align="left">
-<img src="https://travis-ci.com/canciolt/react-redux-typescript-boilerplate.svg?branch=master" width="50">
+<img src="https://travis-ci.com/canciolt/react-redux-typescript-boilerplate.svg?branch=master">
 </p>
 # React-Redux-Typescript-Boilerplate
 
