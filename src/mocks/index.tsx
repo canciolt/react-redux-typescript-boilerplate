@@ -1,4 +1,4 @@
-import { USER_LOGIN } from 'store/types/types';
+import { USER_LOGIN, USER_LOGOUT } from 'store/types/types';
 
 export const userLoginResponse = {
   loggedIn: true,
@@ -12,4 +12,9 @@ export const userLoginReducerData = {
 export const expectedLoginActions = {
   type: USER_LOGIN,
   payload: { loggedIn: true },
+};
+
+export const expectedLogoutActions = {
+  type: USER_LOGOUT,
+  payload: { loggedIn: false },
 };

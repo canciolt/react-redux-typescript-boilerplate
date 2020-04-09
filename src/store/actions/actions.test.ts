@@ -1,8 +1,8 @@
 import configureStore from 'redux-mock-store';
 import thunk, { ThunkDispatch } from 'redux-thunk';
-import { userLoginAction } from 'store/actions/actions';
+import { userLogoutAction } from 'store/actions/actions';
 import { AnyAction } from 'redux';
-import { expectedLoginActions, userLoginReducerData } from 'mocks/index';
+import { expectedLogoutActions } from 'mocks/index';
 
 const middlewares = [thunk];
 
@@ -16,12 +16,12 @@ describe('login user redux', () => {
     store.clearActions();
   });
 
-  describe('login correct user action', () => {
-    it('should dispatch the login user action', () => {
-      return store.dispatch(userLoginAction(userLoginReducerData))
+  describe('logout user action', () => {
+    it('should dispatch the logout user action', () => {
+      return store.dispatch(userLogoutAction())
         .then(() => {
           const actions = store.getActions();
-          expect(actions[0]).toEqual(expectedLoginActions);
+          expect(actions[0]).toEqual(expectedLogoutActions);
         });
     });
   });
