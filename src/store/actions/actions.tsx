@@ -2,17 +2,17 @@ import {
   USER_LOGIN,
   USER_LOGOUT,
   APP_ERROR,
-  AuthActionTypes, USER_LIST, AdminActionTypes, USER_DEL, USER_DETAIL,
+  USER_LIST, AdminActionTypes, USER_DEL, USER_DETAIL,
 } from 'store/types/types';
 import { UserLogin } from 'interfaces/interfaces';
 import HttpService from 'services/HttpService';
 import { AppConfig } from 'config/index';
-import { ThunkAction } from 'redux-thunk';
-import { Action } from 'redux';
+import { ThunkAction, ThunkDispatch } from 'redux-thunk';
+import { Action, AnyAction } from 'redux';
 
 const http = HttpService;
 
-export const userLoginAction = (user: UserLogin): ThunkAction<void, AuthActionTypes, unknown, Action<string>> => async (dispatch: any) => {
+export const userLoginAction = (user: UserLogin) => async (dispatch: ThunkDispatch<any, any, AnyAction>) => {
   try {
     const data = await http.loginJWT({
       username: user.username,
