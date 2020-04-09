@@ -18,8 +18,6 @@
   "author": "dengthatsgood",
   "license": "ISC",
   "dependencies": {
-    "@types/enzyme": "^3.10.5",
-    "@types/jest": "^25.2.1",
     "@types/jwt-decode": "^2.2.1",
     "@types/node": "^13.11.0",
     "@types/qs": "^6.9.1",
@@ -28,8 +26,6 @@
     "@types/react-redux": "^7.0.8",
     "@types/react-router-dom": "^5.1.3",
     "axios": "^0.19.2",
-    "enzyme-to-json": "^3.4.4",
-    "jest": "^25.3.0",
     "jwt-decode": "^2.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -38,7 +34,6 @@
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
-    "ts-jest": "^25.3.1",
     "ts-loader": "^6.2.2",
     "typesafe-actions": "^5.1.0",
     "typescript": "^3.4.5",
@@ -46,7 +41,9 @@
     "webpack-cli": "^3.3.1"
   },
   "devDependencies": {
+    "@types/enzyme": "^3.10.5",
     "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^25.2.1",
     "@types/redux-mock-store": "^1.0.2",
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
@@ -55,6 +52,7 @@
     "css-loader": "^3.4.2",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.1",
@@ -63,9 +61,11 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
+    "jest": "^25.3.0",
     "prettier": "^2.0.2",
     "redux-mock-store": "^1.5.4",
     "style-loader": "^1.1.3",
+    "ts-jest": "^25.3.1",
     "webpack-dev-server": "^3.10.3"
   }
 }

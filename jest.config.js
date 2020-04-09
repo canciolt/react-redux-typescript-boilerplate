@@ -16,7 +16,6 @@ module.exports = {
     '^errors(.*)$': '<rootDir>/src/errors$1',
   },
   snapshotSerializers: ['enzyme-to-json/serializer'],
-  setupFilesAfterEnv: ['<rootDir>/src/enzyme.js'],
-  testURL: 'http://127.0.0.1:8889'
+  setupFilesAfterEnv: ['<rootDir>/test/enzyme.js'],
+  testURL: 'http://127.0.0.1:8889',
 };
-
